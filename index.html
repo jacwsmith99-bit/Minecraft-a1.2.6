@@ -147,6 +147,10 @@
             document.body.classList.add('game');
             document.body.id = 'game_frame';
             main();
+// load mobile controls AFTER game starts
+const mobileScript = document.createElement('script');
+mobileScript.src = 'eaglerpocketmobile.user.js';
+document.head.appendChild(mobileScript)
           };
         })();
       });
